@@ -1,0 +1,19 @@
+<div class="flat_card">
+  <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200')">
+  </div>
+  <div class="card-content">
+    <h4><%= flat.name %></h4>
+    <p><%= flat.description %></p>
+    <div class="flex">
+      <div class="flex">
+        <i class="fas fa-user"></i><span><%= flat.number_of_guests %></span>
+      </div>
+      <div class="">
+        <i class="fas fa-euro-sign"></i><%= flat.price_per_night %>
+      </div>
+    </div>
+  </div>
+  <div class="card-links">
+    <%= link_to "More info", flat_path(flat) %>
+  </div>
+</div>
